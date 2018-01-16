@@ -1,4 +1,4 @@
-group 'com.esfak47.utils'
+group 'com.github.esfak47'
 version '1.0-SNAPSHOT'
 
 buildscript {
@@ -23,5 +23,7 @@ repositories {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    // https://mvnrepository.com/artifact/com.alibaba/fastjson
+    compile group: 'com.alibaba', name: 'fastjson', version: '1.2.41'
     testCompile group: 'junit', name: 'junit', version: '4.11'
 }
