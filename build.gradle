@@ -1,11 +1,12 @@
 group 'com.github.esfak47'
 version '1.0-SNAPSHOT'
-
 buildscript {
     ext.kotlin_version = '1.0.5'
 
     repositories {
-        mavenCentral()
+        maven{
+            url 'http://39.108.84.78:8081/repository/maven-central/'
+        }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -17,8 +18,11 @@ apply plugin: 'kotlin'
 
 sourceCompatibility = 1.5
 
+
 repositories {
-    mavenCentral()
+    maven{
+        url 'http://39.108.84.78:8081/repository/maven-central/'
+    }
 }
 
 dependencies {
